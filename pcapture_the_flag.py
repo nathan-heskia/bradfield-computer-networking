@@ -8,7 +8,7 @@ num_packets = 0
 
 tcp_data = {}
 packet_header = f.read(16)
-output_f = open('out2', 'wb')
+output_f = open('out', 'wb')
 
 while len(packet_header) != 0:
   packet_header = unpack('<IIII', packet_header)
